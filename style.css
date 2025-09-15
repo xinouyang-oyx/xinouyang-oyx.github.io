@@ -98,8 +98,8 @@ nav ul li a:hover {
 }
 
 .personal img {
-  width: 60%;          /* 横幅宽度 */
-  max-height: 120px;   /* 限制高度，避免太大 */
+  width: 80%;          /* 横幅宽度 */
+  max-height: 160px;   /* 限制高度，避免太大 */
   object-fit: cover;   /* 保持横幅效果，自动裁切 */
   border: 2px solid #660874;
   border-radius: 4px;

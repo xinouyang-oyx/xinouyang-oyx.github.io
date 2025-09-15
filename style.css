@@ -103,20 +103,28 @@ nav ul li a:hover {
   border-radius: 6px;
 }
 
+
 /* 标题 */
 h1, h2, h3 {
   font-weight: 700;
 }
+
+/* 首页名字 */
 h1 {
-  font-size: 2em; /* 首页名字 */
+  font-size: 2em;
 }
+
+/* Research 页大标题 */
 h2 {
-  font-size: 1.3em;   /* Research Interests 小一些 */
-  margin-top: 1em;
+  font-size: 1.6em;   /* 比之前 1.3em 更大一号 */
+  margin-top: 1.2em;
   border-bottom: 2px solid #660874;
-  padding-bottom: 2px;
+  padding-bottom: 4px;
 }
+
+/* Research 小标题 */
 h3 {
-  font-size: 1.6em;   /* Subsections in research */
-  margin-top: 1em;
+  font-size: 1.3em;   /* 缩小一号，比正文稍大即可 */
+  margin-top: 0.8em;  /* 缩小与上方的间隔 */
+  margin-bottom: 0.4em; /* 缩小与正文的间隔 */
 }

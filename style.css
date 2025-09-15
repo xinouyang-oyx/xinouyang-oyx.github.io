@@ -92,3 +92,14 @@ h3 {
   font-size: 1.2em;
   margin-top: 1.2em;
 }
+
+/* 邮箱样式 */
+a.email {
+  color: #555;   /* 灰色 */
+  text-decoration: none; /* 去掉下划线 */
+  font-weight: 600; /* 加粗 */
+}
+a.email:hover {
+  color: #000;   /* 悬停时变黑色，保持可见 */
+}
+

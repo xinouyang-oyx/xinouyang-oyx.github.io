@@ -128,3 +128,58 @@ h3 {
   margin-top: 0.8em;  /* 缩小与上方的间隔 */
   margin-bottom: 0.4em; /* 缩小与正文的间隔 */
 }
+
+/* 手机端优化 */
+@media (max-width: 768px) {
+  /* 导航栏：上下堆叠 */
+  nav ul li {
+    display: block;
+    margin: 8px 0;
+  }
+
+  /* 首页布局：上下排列 */
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+    margin: 60px auto 0 auto; /* 更紧凑 */
+    gap: 30px;
+    padding-left: 0;
+  }
+  .home-container img {
+    width: 180px; /* 缩小头像 */
+  }
+  .home-container .text {
+    max-width: 95%; /* 文字更宽 */
+    font-size: 1em; /* 字体稍微缩小 */
+  }
+
+  /* Personal 页：上下排列 */
+  .personal-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .personal-section img {
+    width: 150px; /* 图片缩小 */
+    margin-bottom: 10px;
+  }
+  .personal-section p {
+    font-size: 1em;
+  }
+
+  /* 内容区更贴边 */
+  .content {
+    max-width: 95%;
+    padding: 0 10px;
+    margin: 40px auto;
+  }
+
+  /* Research & Papers 小标题稍微缩小 */
+  h2 {
+    font-size: 1.4em;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+}
+

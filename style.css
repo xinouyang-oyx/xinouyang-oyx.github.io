@@ -90,18 +90,20 @@ nav ul li a:hover {
   line-height: 1.7;
 }
 
+
 /* CV 页横幅照片 */
-.personal-banner {
+.cv-banner {
   text-align: center;
   margin: 40px 0;
 }
-.personal-banner img {
-  width: 80%;
-  max-height: 320px;
-  object-fit: cover;
-  border: 3px solid #660874;
-  border-radius: 6px;
+.cv-banner img {
+  width: 60%;          /* 横幅宽度 */
+  max-height: 200px;   /* 限制高度 */
+  object-fit: cover;   /* 保持横幅裁切效果 */
+  border: 2px solid #660874;
+  border-radius: 4px;
 }
+
 
 
 /* 标题 */

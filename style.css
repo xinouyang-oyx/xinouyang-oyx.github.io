@@ -1,34 +1,30 @@
-/* 默认字体（全站） */
+/* 引入字体（在 HTML <head> 添加以下行）：
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+*/
+
+/* 默认正文字体：Lora */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-family: 'Lora', serif;
   line-height: 1.6;
   color: #000;
 }
 
-/* Papers 页面专用字体 */
+/* Papers 页面专用字体：Times New Roman */
 body.papers {
   font-family: "Times New Roman", Times, serif;
 }
 
-/* 导航栏 */
-nav ul {
-  list-style: none;
-  padding: 10px;
-  text-align: center;
-  margin: 0;
-  border-bottom: 3px solid #660874;
-}
-nav ul li {
-  display: inline-block;  /* 修改为 inline-block，扩大点击区域 */
-  margin: 0 15px;
-}
+/* 导航栏：强制 Times New Roman */
 nav ul li a {
+  font-family: "Times New Roman", Times, serif;
   text-decoration: none;
   color: #000;
   font-weight: 600;
 }
+
+/* 导航栏激活/hover */
 nav ul li a.active {
   color: #000;
   border-bottom: 2px solid #660874;
@@ -38,45 +34,9 @@ nav ul li a:hover {
   border-bottom: 2px solid #660874;
 }
 
-/* 首页布局 */
-.home-container {
-  max-width: 1000px;
-  margin: 120px auto 0 auto;  /* 往下移动 */
-  padding-left: 40px;         /* 往右移动 */
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-.home-container img {
-  width: 220px;
-  border: 3px solid #660874;
-}
-.home-container .text {
-  max-width: 650px; /* 加宽，避免句子断成三行 */
-}
-
-/* 内容页布局 */
-.content {
-  max-width: 600px;
-  margin: 60px auto;
-  padding: 0 15px;
-}
-
-/* Personal 页 Banner */
-.personal-banner {
-  text-align: center;
-  margin: 20px 0;
-}
-.personal-banner img {
-  width: 80%;
-  max-height: 300px;
-  object-fit: cover;
-  border: 3px solid #660874;
-  border-radius: 6px;
-}
-
-/* 标题 */
+/* 标题（除导航栏外）：Source Sans Pro */
 h1, h2, h3 {
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
 }
 h1 {
@@ -93,13 +53,55 @@ h3 {
   margin-top: 1.2em;
 }
 
-/* 邮箱样式 */
-a.email {
-  color: #555;   /* 灰色 */
-  text-decoration: none; /* 去掉下划线 */
-  font-weight: 600; /* 加粗 */
+/* 导航栏整体布局 */
+nav ul {
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+  border-bottom: 3px solid #660874;
 }
-a.email:hover {
-  color: #000;   /* 悬停时变黑色，保持可见 */
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
 }
 
+/* 首页布局 */
+.home-container {
+  max-width: 1000px;
+  margin: 120px auto 0 auto;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.home-container img {
+  width: 220px;
+  border: 3px solid #660874;
+}
+.home-container .text {
+  max-width: 650px;
+}
+
+/* 内容页 */
+.content {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 0 15px;
+}
+.content p {
+  margin-bottom: 1.2em; /* 让段落更松 */
+}
+
+/* Personal 页 Banner */
+.personal-banner {
+  text-align: center;
+  margin: 20px 0;
+}
+.personal-banner img {
+  width: 80%;
+  max-height: 300px;
+  object-fit: cover;
+  border: 3px solid #660874;
+  border-radius: 6px;
+}

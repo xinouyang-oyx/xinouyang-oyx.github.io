@@ -7,6 +7,7 @@
   <title>Xin Ouyang - Home</title>
 
   <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="profile.webp" as="image" type="image/webp" fetchpriority="high">
 
   <meta
     name="description"
@@ -33,25 +34,27 @@
 
   <main class="home-container">
 
-    <img src="官网证件照.png" alt="Xin Ouyang">
+    <img
+      src="profile.webp" width="480" height="600"
+      alt="Xin Ouyang"
+      fetchpriority="high"
+      decoding="async"
+    >
 
     <div class="text">
 
       <h1>Xin Ouyang</h1>
-
       <p>
         I am an Assistant Professor at the School of Economics and Management,
         Tongji University. I received my Ph.D. in Economics from the Institute
         of Economics at Tsinghua University and was a visiting scholar at the
         Center for Labor and a Just Economy at Harvard University.
       </p>
-
       <p>
         My research uses causal inference and AI-based methods to study how
         emerging technologies and institutional change shape technological
         innovation and inequality.
       </p>
-
       <p>
         <strong>Research Fields:</strong>
         Technological Innovation | Identity-Based Inequality | AI For Science &amp; Social Science
